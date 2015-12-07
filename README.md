@@ -12,8 +12,6 @@ Simply add a `MongoTestUtils.remove()` call to your `beforeEach()` declarations 
 
 1. This package directly manipulates `private` Meteor properties. I'm not totally sure what the global impact is on a test envrionment, but, I haven't encountered anything negative yet. Since it's contained within a test instance, it should be okay.
 
-1. This package is not marked as `debugOnly`, though it really should be. The reason for this is because if it is marked as `debugOnly` the test runner `sanjo:jasmine` ignores it. So, just be wary of where you're including/using it.
-
 ## API ##
 
 ### `void` .reset([`string`|`array`] name) ###
