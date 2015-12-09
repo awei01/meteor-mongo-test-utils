@@ -6,10 +6,10 @@ Utils.reset = function(name) {
 		name = [name];
 	}
 	for (var i = 0; i < name.length; i ++) {
-		_cleanUpMongoCollection(name[i]);
+		this._cleanUpMongoCollection(name[i]);
 	}
 };
-function _cleanUpMongoCollection(name) {
+Utils._cleanUpMongoCollection = function(name) {
 	var container = Meteor.isServer ? Meteor.server.method_handlers : Meteor.connection._methodHandlers;
 	delete container['/' + name + '/insert'];
 	delete container['/' + name + '/update'];

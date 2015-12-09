@@ -1,6 +1,6 @@
 Package.describe({
   name: 'awei01:mongo-test-utils',
-  version: '0.0.2',
+  version: '0.0.3',
   // Brief, one-line summary of the package.
   summary: 'Meteor testing utility that allows you to reset collections for unit testing.',
   // URL to the Git repository containing the source code for this package.
